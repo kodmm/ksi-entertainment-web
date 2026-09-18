@@ -33,3 +33,14 @@ npm run build  # プロダクションビルド
 npm run start  # ビルド済みアプリの起動
 npm run lint   # ESLint チェック
 ```
+
+## Docker
+
+```bash
+docker build -t ksi-web --build-arg NEXT_PUBLIC_BFF_URL=http://localhost:4000/graphql .
+docker run -p 3000:3000 -e NEXT_PUBLIC_BFF_URL=http://localhost:4000/graphql ksi-web
+```
+
+`NEXT_PUBLIC_BFF_URL` はクライアントバンドルにビルド時に埋め込まれるため、
+`docker run` の `-e` だけでは反映されない。接続先を変える場合は `docker build`
+の `--build-arg` で渡し直してイメージを作り直すこと。

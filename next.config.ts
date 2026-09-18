@@ -2,6 +2,9 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
+  // Docker イメージをマルチステージビルドで軽量化するため、
+  // 依存を含まない standalone 出力 (.next/standalone) を有効化する。
+  output: "standalone",
   compiler: {
     // SSR とクライアントで生成されるクラス名を一致させるための styled-components 用設定。
     //
