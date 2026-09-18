@@ -1,3 +1,5 @@
+import { Heading } from "./index.styles";
+
 export default function MatchingPage() {
-  return <h1>マッチング（準備中）</h1>;
+  return <Heading>マッチング（準備中）</Heading>;
 }
