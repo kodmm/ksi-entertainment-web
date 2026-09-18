@@ -6,7 +6,7 @@ export default function Home() {
       </h1>
       <div className="flex w-full max-w-2xl flex-col gap-6 sm:flex-row">
         <a
-          href="#"
+          href="/live-record"
           className="flex flex-1 flex-col gap-2 rounded-xl border border-black/[.08] bg-white p-8 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:bg-black dark:hover:bg-[#1a1a1a]"
         >
           <span className="text-xl font-semibold text-black dark:text-zinc-50">
@@ -17,7 +17,7 @@ export default function Home() {
           </span>
         </a>
         <a
-          href="#"
+          href="/matching"
           className="flex flex-1 flex-col gap-2 rounded-xl border border-black/[.08] bg-white p-8 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:bg-black dark:hover:bg-[#1a1a1a]"
         >
           <span className="text-xl font-semibold text-black dark:text-zinc-50">
