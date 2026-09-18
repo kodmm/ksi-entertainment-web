@@ -14,6 +14,16 @@
 - Next.js (App Router) + TypeScript
 - Tailwind CSS
 - ESLint
+- GraphQL クライアント: urql（BFF: ksi-entertainment-bff との通信に使用）
+
+## BFF との接続
+
+GraphQL エンドポイントは環境変数 `NEXT_PUBLIC_BFF_URL` で切り替える。未設定時は
+`http://localhost:4000/graphql` を使う。
+
+BFF（ksi-entertainment-bff）は TypeScript(graphql-yoga) から Go(gqlgen) へ移行中で、
+Go 版のポート番号はまだ確定していない（未確認）。移行後は `.env.local` などで
+`NEXT_PUBLIC_BFF_URL` を実際のエンドポイントに合わせて上書きすること。
 
 ## コマンド
 

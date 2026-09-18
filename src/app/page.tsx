@@ -1,3 +1,5 @@
+import { BffHealthStatus } from "@/shared/ui/bff-health-status";
+
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center gap-8 bg-zinc-50 px-6 py-24 font-sans dark:bg-black">
@@ -28,6 +30,7 @@ export default function Home() {
           </span>
         </a>
       </div>
+      <BffHealthStatus />
     </div>
   );
 }
