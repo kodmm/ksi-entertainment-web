@@ -2,6 +2,8 @@
 
 import { gql, useQuery } from "urql";
 
+import { Status } from "./bff-health-status.styles";
+
 const HEALTH_QUERY = gql`
   query Health {
     health
@@ -29,9 +31,5 @@ export function BffHealthStatus() {
       ? "エラー"
       : "ok";
 
-  return (
-    <p className="text-sm text-zinc-500 dark:text-zinc-400">
-      BFF接続状態: {status}
-    </p>
-  );
+  return <Status>BFF接続状態: {status}</Status>;
 }

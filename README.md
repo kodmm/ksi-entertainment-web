@@ -12,7 +12,7 @@
 ## 構成
 
 - Next.js (App Router) + TypeScript
-- Tailwind CSS
+- styled-components (CSS-in-JS)
 - ESLint
 - GraphQL クライアント: urql（BFF: ksi-entertainment-bff との通信に使用）
 
